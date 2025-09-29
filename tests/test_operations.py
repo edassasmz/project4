@@ -127,7 +127,7 @@ def test_division_with_zero_divisor():
     b = 0.0
     with pytest.raises(ValueError) as exc_info:
         Operation.division(a, b)
-    assert str(exc_info.value) == "Division by zero is not allowed."
+    assert str(exc_info.value) == "Division by zero is not allowed"
 
 
 def test_division_with_zero_numerator():
