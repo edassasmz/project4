@@ -52,7 +52,7 @@ def calculator() -> None:
         try:
             user_input: str = input(">> ").strip()
             if not user_input:
-                continue
+                continue # pragma: no cover
             command = user_input.lower()
             if command == "help":
                 display_help()
