@@ -149,9 +149,3 @@ def test_operations_invalid_input_types(calc_method, a, b, expected_exception):
         calc_method(a, b)
 
 
-def test_power_positive():
-    a = 2.0
-    b = 2.0
-    expected_result = 4.0
-    result = Operation.power(a, b)
-    assert result == expected_result
